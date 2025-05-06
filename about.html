@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunBakery - About Us</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .star-rating {
+            direction: rtl;
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+        }
+        
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            cursor: pointer;
+            color: lightgray;
+        }
+
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div style="background-color: #333; color: white; padding: 50px; text-align: center;">
+        <h1>About Us</h1>
+        <a href="https://hit226g29.bitbucket.io/FinalProject/index.html" style="color: white; text-decoration: none;">Home</a>
+    </div>
+
+    <!-- About Us Section -->
+    <div style="padding: 50px; text-align: center;">
+        <h2>Welcome To SunBakery</h2>
+        <h3>About Us</h3>
+        <div style="display: flex; justify-content: center; margin-top: 30px;">
+            <div style="margin-right: 20px; max-width: 500px;">
+                <img src="img/about.jpg" style="width: 100%; height: auto; border-radius: 5px;">
+            </div>
+            <div style="max-width: 600px;">
+                <h4>At SunBakery, we believe that the perfect cake can make any moment special. Whether you're celebrating a birthday, wedding, or simply enjoying a family meal, we create cakes that bring joy and warmth to every occasion.</h4>
+                <p>Our bakery has been serving the community for over a decade, offering fresh, high-quality baked goods made with the finest ingredients. Each cake, pastry, and bread we create is made with love and attention to detail. We pride ourselves on our commitment to customer satisfaction and our passion for baking.</p>
+                
+                <div class="form-container">
+                    <h2>Leave a Comment & Review</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comment</label>
+                            <textarea class="form-control" id="comment" rows="3" required></textarea>
+                        </div>
+                
+                        <!-- Review Section -->
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rate Us (1 to 5 stars)</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+                            </div>
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Experience Section -->
+    <div style="background-color: #f9f9f9; padding: 50px; text-align: center;">
+        <h3>Our Experience</h3>
+        <p>We have over 5 years of experience creating unforgettable baked goods. Our bakery has become a trusted name in the community for our high-quality cakes and pastries.</p>
+    </div>
+
+    <!-- Our Specialties Section -->
+    <div style="padding: 50px; text-align: center;">
+        <h3>What Makes Us Special?</h3>
+        <div style="display: flex; justify-content: center; margin-top: 30px;">
+            <div style="margin-right: 50px;">
+                <h4>100% Healthy</h4>
+                <p>We use only the finest ingredients to ensure that every product is fresh, healthy, and delicious.</p>
+            </div>
+            <div>
+                <h4>Award Winning</h4>
+                <p>Our bakery has won multiple local awards for our cakes and pastries. We are proud to be recognized for our hard work and dedication to baking the finest treats.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <div style="background-color: #333; color: white; padding: 50px;">
+        <div style="display: flex; justify-content: space-around; text-align: center;">
+            <div>
+                <h3>5</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div>
+                <h3>300</h3>
+                <p>Cakes Made</p>
+            </div>
+            <div>
+                <h3>1000</h3>
+                <p>Completed Orders</p>
+            </div>
+            <div>
+                <h3>500</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div style="background-color: #333; color: white; padding: 50px; text-align: center;">
+        <h3>Get In Touch</h3>
+        <p>Visit us at: Darwin City, Northern Territory, Australia</p>
+        <p>Email us at: info@SunBakery.com</p>
+        <p>Call us at: +66 345 67890</p>
+    </div>
+
+</body>
+
+</html>
